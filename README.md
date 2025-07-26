@@ -10,7 +10,7 @@ This project implements a wallet risk scoring model using wallet activity simila
 - `Wallet id.xlsx`: Contains a list of wallet addresses to be evaluated.
 
 
-## 📈 Features
+## Features
 
 - `total_borrows` – Total amount borrowed by the wallet  
 - `total_repays` – Total amount repaid  
@@ -20,7 +20,7 @@ This project implements a wallet risk scoring model using wallet activity simila
 - `borrow_to_supply_ratio` – Debt-to-collateral ratio  
 
 
-## 🧠 Feature Engineering & Scoring Logic
+## Feature Engineering & Scoring Logic
 
 1. **Normalization**: All key features are scaled between 0 and 1 using Min-Max Scaler.  
 2. **Scoring Formula**: Wallets are scored out of 1000 using a weighted formula:
@@ -46,7 +46,7 @@ Lower risk wallets will have higher scores.
 - `risk_score_distribution.png` – Histogram of risk scores  
 - `borrow_to_supply_vs_score.png` – Scatter plot of borrow/supply ratio vs score  
 
-## 📊 Visualizations
+📊 Visualizations
 
 ### 1. Risk Score Distribution  
 Displays how scores are distributed across all wallets.
@@ -54,14 +54,14 @@ Displays how scores are distributed across all wallets.
 ### 2. Borrow-to-Supply vs Score  
 Reveals how the borrow/supply ratio affects risk scoring, color-coded by liquidation events.
 
-## 🛠️ Tools & Libraries
+## Tools & Libraries
 
 - Python 3.x  
 - `pandas`, `numpy` – data processing  
 - `scikit-learn` – normalization  
 - `matplotlib`, `seaborn` – plotting  
 
-## ✅ How to Run
+## How to Run
 
 1. Place `Wallet id.xlsx` in the same folder.  
 2. Run the script:
